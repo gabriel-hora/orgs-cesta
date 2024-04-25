@@ -7,6 +7,7 @@ import {
 } from '@expo-google-fonts/montserrat';
 
 import Cesta from './src/telas/cesta/Cesta';
+import mock from './src/mocks/cesta';
 
 export default function App() {
 
@@ -24,7 +25,7 @@ export default function App() {
     /* SafeAreaView serve para proteger a StatusBar no iOS */
     <SafeAreaView>
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock}/>
     </SafeAreaView>
   );
 }
